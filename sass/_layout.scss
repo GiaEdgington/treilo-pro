@@ -7,20 +7,25 @@
     min-height: 50rem;
 }
 
-.content {
-    display: flex;
-}
-
 .header {
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
 }
 
+.content {
+    display: flex;
+}
+
+
 .sidebar {
     background-color: var(--color-grey-dark-1);
+    // set width: growth shrink width
+    flex: 0 0 18%;
 }
 
 .hotel-view {
-    background-color: #fff;
+    background-color: orangered;
+    // grow as much as it can
+    flex: 1;
 }
