@@ -214,13 +214,21 @@
 
 .overview {
     display: flex;
+    align-items: center; //vertical alignment
+    border-bottom: 1px  solid var(--color-grey-light-2);
 
     &__heading {
-        
+       font-size: 2.25rem;
+       font-weight: 300;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       padding: 1.5rem 3rem;
     }
 
     &__stars {
-        
+        //margin auto instead of flex growth to create space
+        margin-right: auto;
+        display: flex; //svg behave as inline elements, need to set flex to avoid extra space
     }
 
     &__icon-star,
@@ -231,7 +239,7 @@
     }
 
     &__location {
-        
+
     }
 
     &__rating {
