@@ -23,6 +23,12 @@
     justify-content: space-between;
     //align on the y axis
     align-items: center;
+
+    @media screen and (max-width: $bp-xsmall) {
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 11rem;
+    }
 }
 
 .content {
